@@ -8,9 +8,10 @@
 </head>
 
 <body>
+    <div id="pos"></div>
     <script>
         const successCallback = (position) => {
-            alert(position)
+            document.getElementById("pos").innerHTML = position
         }
 
         const errorCallback = (error) => {
